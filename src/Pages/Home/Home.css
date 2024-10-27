@@ -1,0 +1,57 @@
+.home {
+  position: relative;
+  background-image: url(../../images/Home.png);
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background-color: #00a651;
+  background-attachment: fixed;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 100%;
+    z-index: -1;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 779px;
+    height: 204px;
+    max-width: 100%;
+
+    h2 {
+      font-size: 5vw;
+    }
+
+    p {
+      width: 568px;
+      height: 44px;
+      max-width: 100%;
+      margin: 2rem auto;
+    }
+
+    button {
+      background-color: #00a651;
+      height: 60px;
+      width: 214px;
+      border-radius: 10px;
+      font-size: 24px;
+      color: inherit;
+      transition: var(--main-transition);
+
+      &:hover {
+        background-color: #00c55f;
+      }
+    }
+  }
+}
