@@ -41,7 +41,7 @@
     }
 
     button {
-      background-color: #00a651;
+      background-color: var(--main-color);
       height: 60px;
       width: 214px;
       border-radius: 10px;

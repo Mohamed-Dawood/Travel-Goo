@@ -1,6 +1,9 @@
 .navbar {
   padding: 1rem 0;
   color: #fff;
+  .active {
+    display: flex !important;
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -22,7 +25,11 @@
 
       li {
         margin: 1.5rem;
+        transition: var(--main-transition);
         cursor: pointer;
+        &:hover {
+          color: var(--main-color);
+        }
       }
     }
 
@@ -47,6 +54,32 @@
     }
     .bars {
       display: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      padding: 0.3rem 0.4rem;
+      border-radius: 0.5rem;
+      svg {
+        font-size: 35px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .bars {
+      display: flex !important;
+    }
+
+    ul {
+      display: none !important;
+      position: absolute;
+      background: silver;
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column;
+      left: 0;
+      /* height of nav 73 + 2 * padding 1rem = 16px  */
+      top: 105px;
+      z-index: 1;
+      text-align: center;
     }
   }
 }
