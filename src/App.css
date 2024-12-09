@@ -8,6 +8,7 @@
 :root {
   --main-transition: 0.3s;
   --main-color: #00a651;
+  --secondary-background-color: #ecf1f0;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -44,4 +45,38 @@ button {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-header {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  background: radial-gradient(#bdbdbd, #fdfdfd);
+  margin: 3rem 0;
+}
+
+.services,
+.statics,
+.destinations,
+.packages {
+  padding: 4rem 0;
+  .header {
+    text-align: center;
+    margin: 3rem 0;
+    h3 {
+      text-transform: capitalize;
+      font-family: 'Open Sans';
+      font-size: clamp(2vw, 30px, 6vw);
+      max-width: 518px;
+      margin: auto;
+    }
+    p {
+      max-width: 495px;
+      margin: 1rem auto;
+    }
+  }
 }

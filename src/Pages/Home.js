@@ -1,4 +1,5 @@
-import Navbar from '../../Components/Navbar';
+import Button from '../Components/Button';
+import Navbar from '../Components/Navbar';
 import './Home.css';
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Content() {
         We always try to make our customer Happy. We provide all kind of
         facilities. Your Satisfaction is our main priority
       </p>
-      <button>Discover more</button>
+      <Button buttonName="discover more" />
     </div>
   );
 }
