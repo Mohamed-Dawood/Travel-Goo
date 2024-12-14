@@ -9,10 +9,18 @@
   --main-transition: 0.3s;
   --main-color: #00a651;
   --secondary-background-color: #ecf1f0;
+  --secondary-text-color: #5e6282;
 }
+
+::selection {
+  color: #fff;
+  background: var(--main-color);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
 button {
   border: none;
   outline: none;
@@ -49,6 +57,39 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: inset 0px 1px 5px 2px #b8b8b8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00c55f;
+}
+
+.logo {
+  width: 76px;
+  font-family: 'Laila', serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 24px;
+
+  span {
+    font-size: 32px;
+    line-height: 0;
+  }
 }
 
 .section-header {
@@ -62,7 +103,8 @@ a {
 .services,
 .statics,
 .destinations,
-.packages {
+.packages,
+.footer {
   padding: 4rem 0;
   .header {
     text-align: center;
